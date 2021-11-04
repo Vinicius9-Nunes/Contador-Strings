@@ -1,0 +1,15 @@
+<div>
+  <h1>Contador de letras</h1>
+  <div class="resultado" id="resultado">
+    <div class="resultado-caracter" id="resultado-caracter" [(ngModel)]="respostaCaracteres">Caracteres: </div>
+    <div class="resultado-palavras" id="resultado-palavras"[(ngModel)]="respostaPalavras">Palavras: </div>
+  </div>
+  <div class="div-form">
+    <form (ngSubmit)="ContarStrings()">
+      <input [(ngModel)]="textoContador" type="text" class="texto" id="texto" name="texto" placeholder="Insira seus texto aqui..." autocomplete="off"><br>
+      <button class="btn-envio" type="submit">Enviar</button>
+    </form>
+  </div>
+
+
+</div>
